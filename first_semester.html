@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Title</title>
+</head>
+<body style="background-image: url(background.jpg); font-family: 'Comic Sans MS';">
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary; navbar-inner">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img alt="log" src="https://clipart-library.com/images_k/daisy-transparent-background/daisy-transparent-background-14.png" class="logo-box__img">
+        <span style="color: #ffe249; -webkit-text-stroke: 0.5px #2b3035">romashka</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="btn btn-success text-nowrap" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success text-nowrap" aria-current="page" href="first_semester.html">Первый семестр</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success text-nowrap" aria-current="page" href="">Второй семестр</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success text-nowrap" aria-current="page" href="services.html">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success text-nowrap" aria-current="page" href="">Авторизация</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main style="display: flex;">
+  <div style="display: grid; background: rgba(255,255,255,0.55); height: fit-content; border-radius: 15px; margin: 10px;">
+    <nav class="vertical-nav d-none d-md-block">
+      <h4 class="vertical-nav__header" style="transition: transform 0.3s ease;">Навигация <nobr>по странице</nobr></h4>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;" href="#lectures">Лекции</a></li>
+        <li class="nav-item"><a class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;" href="#pracs">Практики</a></li>
+        <li class="nav-item"><a class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;" href="#adress">Адрес ВУЗа</a></li>
+        <li class="nav-item"><a class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;" href="#programm">Рабочая программа</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-content">
+    <span class="badge rounded-pill text-bg-success" style="font-size: 2em; margin-bottom: 16px;"><b>Первый семестр</b></span>
+    <div>
+      <p style="background-color: rgba(64,152,111,0.73); border-radius: 15px; color: white; transition: background-color 1.5s ease"> Здесь вы можете узнать о том, что будет изучаться в первом семетре по дисциплине "Фронтенд и бэкенд разработка" и где будут проходить занятия.</p>
+    </div>
+    <article>
+      <h5 id="lectures" class="badge rounded-pill text-bg-success">Лекции</h5>
+      <button id="showLectures" class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;">Показать лекции</button>
+      <table id="Table_lec" class="table table-light table-striped table-hover table-responsive" style="display: none;">
+        <tr>
+          <th>Номер</th>
+          <th>Тема</th>
+          <th>Посещение</th>
+        </tr>
+        <tr>
+          <td class="number">1</td>
+          <td>Основы языка html</td>
+          <td><input type="checkbox" checked/></td>
+        </tr>
+        <tr>
+          <td class="number">2</td>
+          <td>Углубленное изучение html</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">3</td>
+          <td>Основы работы с CSS</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">4</td>
+          <td>Адаптивная верстка, Flexbox и Grid Layout</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">5</td>
+          <td>Bootstrap - работа с фреймворком</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">6</td>
+          <td>Основы языка JavaScript</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">7</td>
+          <td>Работа с DOM и событиями в JavaScript</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">8</td>
+          <td>Введение в GitHub и GitHub Pages</td>
+          <td><input type="checkbox"/></td>
+        </tr>
+      </table>
+    </article>
+    <article>
+      <h5 id="pracs" class="badge rounded-pill text-bg-success">Практики</h5>
+      <button id="showPrac" class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;">Показать практики</button>
+      <table id="Table_prac" class="table table-light table-striped table-hover" style="display: none;">
+        <tr>
+          <th>Номер</th>
+          <th>Тема</th>
+          <th>Посещение</th>
+          <th>Выполнение</th>
+        </tr>
+        <tr>
+          <td class="number">1</td>
+          <td>Основы языка html</td>
+          <td><input type="checkbox" checked/></td>
+          <td><input type="checkbox" checked/></td>
+        </tr>
+        <tr>
+          <td class="number">2</td>
+          <td>Формы и кнопки в html</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">3</td>
+          <td>Таблицы и интерактивные элементы в html</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">4</td>
+          <td>Основы работы с CSS</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">5</td>
+          <td>Работа с классами в CSS</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">6</td>
+          <td>Работа с сетками и разметкой в html</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">7</td>
+          <td>Адаптивная вёрстка</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">8</td>
+          <td>Bootstrap</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">9</td>
+          <td>Основы языка JavaScript</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">10</td>
+          <td>Базовые задачи на JS</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">11</td>
+          <td>DOM-структура приложений и работа с объектами в языке JS</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">12</td>
+          <td>Встраивание скриптов</td>
+          <td><input type="checkbox"/></td>
+          <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+          <td class="number">13</td>
+          <td>Отладка сценариев</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td class="number">14</td>
+          <td>Анимации и работа с ними</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td class="number">15</td>
+          <td>Github</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td class="number">16</td>
+          <td>Защита проектов</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </table>
+    </article>
+    <h5 id="adress" class="badge rounded-pill text-bg-success text-wrap">Занятия проходят по адресу: просп. Вернадского, 78, стр. 4</h5>
+    <div style="position:relative; overflow:hidden; display: flex;"><a
+            href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps"
+            style="color:#000;font-size:12px;position:absolute;top:0px;">МИРЭА, Российский технологический
+      университет</a><a
+            href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps"
+            style="color:#000;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=38.027115%2C55.775720&mode=search&oid=1084832794&ol=biz&sll=30.212256%2C55.158740&source=serp_navig&sspn=2.073669%2C0.956145&text=%D1%80%D1%82%D1%83%20%D0%BC%D0%B8%D1%80%D1%8D%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B&z=10"
+              width="800" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+    <h5 id="programm" class="badge rounded-pill text-bg-success">Рабочая программа</h5>
+    <object data="ПР_6_Greed%20и%20Flexbox.pdf" width="800" height="1000" border="3px solid grey"></object>
+  </div>
+</main>
+
+<footer>
+  <h4 class="footer-signature">© Азарова Дарья Михайловна, 2024</h4>
+  <div class="footer-social-networks">
+    <a href="" class="social-link-box">
+      <img alt="whatsapp_logo" src="https://www.svgrepo.com/show/349563/whatsapp.svg"
+           class="social-link-box__img">
+    </a>
+    <a href="" class="social-link-box">
+      <img alt="telegram_logo" src="https://www.svgrepo.com/show/349527/telegram.svg"
+           class="social-link-box__img">
+    </a>
+  </div>
+</footer>
+</body>
+<script>
+  // Таблицы
+  const showLecturesButton = document.getElementById('showLectures');
+  const lecturesTable = document.getElementById('Table_lec');
+
+  showLecturesButton.addEventListener('click', () => {
+    lecturesTable.style.display = 'block';
+  });
+
+  const showPracButton = document.getElementById('showPrac');
+  const PracTable = document.getElementById('Table_prac');
+
+  showPracButton.addEventListener('click', () => {
+    PracTable.style.display = 'block';
+  });
+
+  // Заголовок
+  const h4 = document.querySelector('h4');
+
+  h4.addEventListener('mouseover', () => {
+    h4.style.transform = 'scale(1.1)';
+  });
+
+  h4.addEventListener('mouseout', () => {
+    h4.style.transform = 'scale(1)';
+  });
+
+  // Параграф
+  const paragraph = document.querySelector('p');
+  let isLightCoral = false;
+
+  paragraph.addEventListener('click', () => {
+    isLightCoral = !isLightCoral;
+    paragraph.style.backgroundColor = isLightCoral ? 'rgba(64,152,111,0.73)' : 'rgba(165,135,235,0.73)';
+  });
+
+
+</script>
+</html>

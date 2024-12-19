@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-image: url(background.jpg); font-family: 'Comic Sans MS';">
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary; navbar-inner">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img alt="log" src="https://clipart-library.com/images_k/daisy-transparent-background/daisy-transparent-background-14.png" class="logo-box__img">
+                <span style="color: #ffe249; -webkit-text-stroke: 0.5px #2b3035">romashka</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="first_semester.html">Первый семестр</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="">Второй семестр</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="services.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="">Авторизация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main style="display: flex;">
+    <div style="display: grid; background: rgba(255,255,255,0.55); height: fit-content; border-radius: 15px; margin: 10px;">
+    <nav class="vertical-nav d-none d-md-block">
+        <h4 class="vertical-nav__header">Навигация <nobr>по странице</nobr></h4>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;" href="#front">Frontend</a></li>
+            <li class="nav-item"><a class="btn btn-outline-success" style="background: rgba(113,237,177,0.4); margin: 10px;" href="#back">Backend</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="main-content">
+        <span style="font-size: 2em; margin-bottom: 16px;" class="badge rounded-pill text-bg-success"><b>Добро пожаловать на мой сайт!</b></span>
+        <div class="article-with-img">
+            <p class="badge text-wrap" style="background: rgba(70, 140, 106, 0.88);">Меня зовут Азарова Дарья Михайловна и&nbsp;я&nbsp;начинающий специалист по <nobr>веб-разработке</nobr>.</p>
+            <img src="95c1a14d611ba3429beefe8c9a51df20.jpg" style="width: 250px; height: auto; border: 2px solid #000000;" alt="kotik" class="student-photo">
+        </div>
+        <article>
+            <h5 id="front" class="badge rounded-pill text-bg-success">Фронтенд</h5>
+            <p class="badge text-wrap" style="background: rgba(70, 140, 106, 0.88);">
+                Фронтенд (или клиентская часть) - это то, что видит пользователь.
+                Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы,
+                изображения и текст. Фронтенд разработчики используют языки разметки и стилизации,
+                такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы.
+                Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.
+            </p>
+
+            <video class="video_index" controls="controls" muted>
+                <source src="video1.mp4" type="video/mp4"/>
+            </video>
+
+        </article>
+        <article>
+            <h5 id="back" class="badge rounded-pill text-bg-success">Бэкенд</h5>
+            <p class="badge text-wrap" style="background: rgba(70, 140, 106, 0.88);">
+                Бэкенд (или серверная часть) - это "за кулисами" веб-приложения. Он отвечает за обработку данных,
+                управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки
+                программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания
+                логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность
+                данных.
+            </p>
+
+            <video class="video_index" controls="controls" muted>
+                <source src="video2.mp4" type="video/mp4" />
+            </video>
+
+        </article>
+    </div>
+</main>
+<footer>
+    <h4 class="footer-signature">© Азарова Дарья Михайловна, 2024</h4>
+    <div class="footer-social-networks">
+        <a href="" class="social-link-box">
+            <img alt="whatsapp_logo" src="https://www.svgrepo.com/show/349563/whatsapp.svg" class="social-link-box__img">
+        </a>
+        <a href="" class="social-link-box">
+            <img alt="telegram_logo" src="https://www.svgrepo.com/show/349527/telegram.svg" class="social-link-box__img">
+        </a>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    const photo = document.querySelector('.student-photo');
+    let rotation = 0;
+    let animationId;
+
+    photo.addEventListener('mouseover', () => {
+        animationId = requestAnimationFrame(animate);
+    });
+
+    photo.addEventListener('mouseout', () => {
+        cancelAnimationFrame(animationId);
+    });
+
+    function animate() {
+        rotation += 5; // Угол вращения за один кадр
+        photo.style.transform = `rotate(${rotation}deg)`;
+        animationId = requestAnimationFrame(animate);
+    }
+</script>
+
+</body>
+</html>

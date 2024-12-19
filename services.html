@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-image: url(background.jpg); font-family: 'Comic Sans MS';">
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content" style="width: fit-content; ">
+        <form id="contactForm" style="margin: 30px;">
+            <div class="mb-3">
+            <label for="name" class="form-label">Как вас зовут:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Фамилия Имя Отчество" required>
+            </div>
+
+            <div class="mb-3">
+            <label for="email" class="form-label">Электронная почта:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="ivanov.ivan@mail.ru"required>
+            </div>
+
+            <div class="mb-3">
+            <label for="number" class="form-label">Телефон:</label>
+            <input type="tel" id="number" name="number" class="form-control" placeholder="+7 900 000 00 00" required>
+            </div>
+            <div class="mb-3">
+            <label for="country" class="form-label">Страна:</label>
+            <select class="form-control" name="country" id="country" required>
+                <option value="" disabled selected>Выберите страну</option>
+                <option value="Россия">Российская Федерация</option>
+                <option value="Абхазия">Абхазия</option>
+                <option value="США">Соединённые Штаты Америки</option>
+                <option value="Япония">Япония</option>
+                <option value="Эквадор">Эквадор</option>
+            </select>
+            </div>
+
+            <div class="mb-3">
+            <label for="date" class="form-label">Дата:</label>
+            <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+            <label for="comments" class="form-label">Комментарий: </label>
+            <textarea id="comments" name="comments" class="form-control"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+            <label class="agree">
+                <input type="checkbox" class="form-check-input" id="agree" required>
+                <label class="form-check-label" for="agree" name="agree"/>
+                Согласие на обработку персональных данных</label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success">Отправить</button>
+            </div>
+            <p id="successMessage" style="display: none; text-wrap: wrap;">Форма успешно отправлена! Для выхода нажмите в любое место вне окна.</p>
+        </form>
+    </div>
+</div>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary; navbar-inner">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img alt="log" src="https://clipart-library.com/images_k/daisy-transparent-background/daisy-transparent-background-14.png" class="logo-box__img">
+                <span style="color: #ffe249; -webkit-text-stroke: 0.5px #2b3035">romashka</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="first_semester.html">Первый семестр</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="">Второй семестр</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="services.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-nowrap" aria-current="page" href="">Авторизация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="row" style="--bs-gutter-x: 0;">
+        <div class="col">
+            <div class="row gap-5 " style="margin-right: 0; margin-left: 0">
+                <div class="card col-12 col-sm p-0">
+                    <div class="card border-1 pb-1 h-100">
+                        <img src="https://avatars.mds.yandex.net/get-znatoki/470774/2a000001833cc5b13938b6b58cfcfb4f5d6e/orig" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Сайт-визитка</h5>
+                            <p class="card-text text-wrap" style="">Сайт, где ваша визитка туда сюда направо налево вперед назад</p>
+                            <a class="btn btn-success openModal">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm p-0">
+                    <div class="card border-1 pb-1 h-100">
+                        <img src="https://i.pinimg.com/originals/57/38/40/573840d96e8ff335bcf69871d5a466e9.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Корпоративный сайт</h5>
+                            <p class="card-text">Регистрируемся на корпоративы - новый год не за горами</p>
+                            <a class="btn btn-success openModal">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm p-0">
+                    <div class="card border-1 pb-1 h-100">
+                    <img src="lelya.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Интернет-магазин</h5>
+                            <p class="card-text">всеми любимые магазинчики онлайн</p>
+                            <a class="btn btn-success openModal">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="badge text-bg-success text-wrap mt-3" style="font-size: large; ">
+            <p class="p-1">
+                Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на
+                триллионах и триллионах таких же планет, как эта Земля, мне этот мир абсолютно понятен,
+                и я здесь ищу только одного - покоя, умиротворения и
+                вот этой гармонии, от слияния с бесконечно вечным, от созерцания
+                великого фрактального подобия и от вот этого замечательного всеединства
+                существа, бесконечно вечного, куда ни посмотри, хоть вглубь - бесконечно
+                малое, хоть ввысь - бесконечное большое, понимаешь?
+            </p>
+            <p>
+                А ты мне опять со
+                своим вот этим, иди суетись дальше, это твоё распределение, это
+                твой путь и твой горизонт познания и ощущения твоей природы, он
+                несоизмеримо мелок по сравнению с моим, понимаешь? Я как будто бы уже
+                давно глубокий старец, бессмертный, ну или там уже почти бессмертный,
+                который на этой планете от её самого зарождения, ещё когда только Солнце
+                только-только сформировалось как звезда, и вот это газопылевое облако,
+                вот, после взрыва, Солнца, когда оно вспыхнуло, как звезда, начало
+                формировать вот эти коацерваты, планеты, понимаешь, я на этой Земле уже
+                как будто почти пять миллиардов лет живу и знаю её вдоль и поперёк
+                этот весь мир, а ты мне какие-то... мне не важно на твои тачки, на твои
+                яхты, на твои квартиры, там, на твоё благо.
+            </p>
+        </div>
+    </div>
+</main>
+<footer>
+    <h4 class="footer-signature">© Азарова Дарья Михайловна, 2024</h4>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
